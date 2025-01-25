@@ -1,0 +1,21 @@
+{
+    "name": "TakeABreak",
+    "version": "0.5.0",
+    "description": "Why have boring images on websites when you can have pixel art instead?",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["js/replace_images.js"],
+            "matches": ["<all_urls>"]
+        }],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "env": {
+        "SERVER_URL": "https://takeabreak.github.com/"
+    }
+}
