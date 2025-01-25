@@ -11,7 +11,7 @@ def image_get(id):
     img_url = id + ".png"
     print(img_url)
 
-    return flask.send_from_directory("backend/images", img_url)
+    return flask.send_from_directory("images", img_url)
 
 
 app.run(
