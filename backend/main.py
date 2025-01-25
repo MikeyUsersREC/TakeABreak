@@ -3,8 +3,9 @@ from flask import request
 
 app = flask.Flask(__name__)
 
+
 # this should be pretty safe from directory travel attacks!
-@app.get("/images/{id:id}")
+@app.get("/images/<id:id>")
 def image_get(id):
     id = "".join(list(filter(str.isdigit, id)))
     img_url = id + ".png"
