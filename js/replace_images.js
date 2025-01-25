@@ -1,6 +1,6 @@
 
-let HOSTURL = "https://takeabreak.github.com/"; // replace this if self-hosting - code for this server is in ./backend
-if (HOSTURL.substr(HOSTURL.length - 1)) {
+let HOSTURL = "https://takeabreak.sector9.lol/"; // replace this if self-hosting - code for this server is in ./backend
+if (HOSTURL.substr(HOSTURL.length - 1) !== "/") {
     HOSTURL = HOSTURL + "/"; // testing if the url you provided has a trailing slash (it needs one)
 }
 let testfile = null;
