@@ -1,7 +1,7 @@
 
-let HOSTURL = chrome.runtime.getManifest().env.SERVER_URL;
+let HOSTURL = "https://takeabreak.github.com/"; // replace this if self-hosting - code for this server is in ./backend
 if (HOSTURL.substr(HOSTURL.length - 1)) {
-    HOSTURL = HOSTURL + "/";
+    HOSTURL = HOSTURL + "/"; // testing if the url you provided has a trailing slash (it needs one)
 }
 let test_file = null;
 
