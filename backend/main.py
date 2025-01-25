@@ -9,7 +9,9 @@ app = flask.Flask(__name__)
 def image_get(id):
     id = "".join(list(filter(str.isdigit, id)))
     img_url = id + ".png"
-    return flask.send_from_directory("images", img_url)
+    print(img_url)
+
+    return flask.send_from_directory("backend/images", img_url)
 
 
 app.run(
