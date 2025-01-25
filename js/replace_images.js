@@ -3,7 +3,7 @@ let HOSTURL = "https://takeabreak.github.com/"; // replace this if self-hosting 
 if (HOSTURL.substr(HOSTURL.length - 1)) {
     HOSTURL = HOSTURL + "/"; // testing if the url you provided has a trailing slash (it needs one)
 }
-let test_file = null;
+let testfile = null;
 
 // utility function
 function getRandomInt(min, max) {
