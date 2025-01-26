@@ -6,6 +6,9 @@ Have you ever thought to yourself "why should I have to endure these minimalist,
 
 You might ask "why breakfast"? Well, you can't exactly surf the internet on an empty stomach, and I think it fits quite well.
 
+# Public Release
+I have sent a request to publish this on the Chrome Web Store. It is currently awaiting review. If you'd like to install this extension, follow the Installation instructions below! I assure you it's worth it!
+
 # Images
 <img src="metadata/attachments/brave.jpg">
 
@@ -20,10 +23,12 @@ _Roblox_
 _StackOverflow_
 
 # Installation
-- Download the .zip file.
+- Download the .zip file (Code -> Download ZIP).
+- Extract the .zip file.
 - Go to `chrome://extensions` _(or similar!)_
 - Enable `Developer Mode`
-- Select "Load packed"
+- Select "Load unpacked"
+- Select the extracted folder
 
 
 # FAQ

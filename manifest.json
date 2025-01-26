@@ -13,7 +13,6 @@
         }],
     "permissions": [
         "scripting",
-        "tabs",
         "activeTab",
         "storage"
     ],
@@ -21,10 +20,6 @@
         "512": "metadata/TakeABreak.png"
     },
     "options_page": "options/options.html",
-    "host_permissions": [
-        "http://*/*",
-        "https://*/*"
-    ],
     "action": {
         "default_icon": "metadata/TakeABreak.png"
     }
