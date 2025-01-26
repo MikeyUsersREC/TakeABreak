@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TakeABreak Options</title>
+  <link rel="icon" href="/metadata/TakeABreak.png">
+  <script src="external_libs/tailwind.js"></script>
+
+  <style>
+
+    body {
+        font-family: "Roboto", serif;
+        margin-bottom: 2em;
+    }
+
+    .setting {
+      margin-bottom: 15px;
+    }
+
+    .main-content {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="main-content">
+    <h1 class="mb-2 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">TakeABreak Options</h1>
+    <div class="flex items-center">
+        <input id="load-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="load-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Activate this extension on the automatic loading of a tab.</label>
+    </div>
+    <div class="flex items-center">
+        <input id="onclick-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="onclick-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Activate this extension on left mouse button click.</label>
+    </div>
+    <div class="flex items-center mb-4">
+        <input id="action-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="action-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Activate this extension on clicking the extension badge.</label>
+    </div>
+
+    <div class="flex items-center mb-4">
+        <input id="enable-scroll" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="enable-scroll" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Continue replacing images when you scroll.</label>
+    </div>
+
+    <button id="save" type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Save Changes</button>
+  </div>
+  <script src="options.js"></script>
+  <script src="external_libs/flowbite.js"></script>
+</body>
+</html>
